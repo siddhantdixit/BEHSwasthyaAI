@@ -4,11 +4,13 @@ const userRoutes = require('./routes/userRoutes');
 const blogRoutes = require('./routes/blogRoutes');
 const commentRoutes = require('./routes/commentRoutes');
 
+require('dotenv').config()
+
 const app = express();
 const PORT = process.env.PORT || 3000;
 
 // Connect to the MongoDB database using Mongoose
-mongoose.connect('mongodb://localhost/mydatabase', {
+mongoose.connect(process.env.DBURL, {
   useNewUrlParser: true,
   useUnifiedTopology: true
 })
