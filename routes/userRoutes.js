@@ -17,4 +17,11 @@ router.put('/:userId', userController.updateUser);
 // DELETE /api/users/:userId - Delete a user by id
 router.delete('/:userId', userController.deleteUser);
 
+
+// Get k-th level friends of a user
+router.get('/:userId/level/:levelNo', userController.findKthFriend);
+
+
+
+
 module.exports = router;
