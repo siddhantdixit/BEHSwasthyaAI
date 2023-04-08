@@ -28,7 +28,8 @@ const getBlogById = async (req, res, next) => {
 // Create a new blog
 const createBlog = async (req, res, next) => {
   try {
-    req.body.author = req.user._id; // Add the author id to the blog
+    // req.body.author = req.user._id; // Add the author id to the blog
+    req.body.author = '6431b7780467a4b91b443dfe'; //Assuming user is signed in as Jagat
     const newBlog = new Blog(req.body);
     const savedBlog = await newBlog.save();
     res.status(201).json(savedBlog);
