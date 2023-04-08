@@ -1,0 +1,49 @@
+{
+    "users": [
+      {
+        "name": "John Doe",
+        "email": "johndoe@example.com"
+      },
+      {
+        "name": "Jane Doe",
+        "email": "janedoe@example.com"
+      },
+      {
+        "name": "Bob Smith",
+        "email": "bobsmith@example.com"
+      }
+    ],
+    "blogs": [
+      {
+        "title": "My First Blog Post",
+        "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        "author": "John Doe",
+        "comments": [
+          {
+            "content": "Great post!",
+            "author": "Jane Doe"
+          },
+          {
+            "content": "I agree!",
+            "author": "Bob Smith"
+          }
+        ]
+      },
+      {
+        "title": "My Second Blog Post",
+        "content": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+        "author": "Jane Doe",
+        "comments": [
+          {
+            "content": "Interesting topic!",
+            "author": "John Doe"
+          },
+          {
+            "content": "Thanks for sharing!",
+            "author": "Bob Smith"
+          }
+        ]
+      }
+    ]
+  }
+  
